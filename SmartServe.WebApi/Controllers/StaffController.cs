@@ -52,9 +52,10 @@ namespace SmartServe.WebAPI.Controllers
             return StatusCode(response.StatusCode, response);
         }
         [HttpPut]
-        public async Task<IActionResult>UpdateStaffAsync(int id)
+        public async Task<IActionResult>UpdateStaffAsync(UpdateStaffDto dto)
         {
-            var response =await _staffService.UpdateStaffAsync(id);
+            dto.ModifiedBy = ClaimsHelper.GetUserId(User);
+            var response =await _staffService.UpdateStaffAsync(dto);
             return StatusCode(response.StatusCode, response);
         }
     }
