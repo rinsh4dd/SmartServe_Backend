@@ -52,10 +52,18 @@ namespace SmartServe.WebAPI.Controllers
             return StatusCode(response.StatusCode, response);
         }
         [HttpPut]
-        public async Task<IActionResult>UpdateStaffAsync(UpdateStaffDto dto)
+        public async Task<IActionResult> UpdateStaffAsync(UpdateStaffDto dto)
         {
             dto.ModifiedBy = ClaimsHelper.GetUserId(User);
-            var response =await _staffService.UpdateStaffAsync(dto);
+            var response = await _staffService.UpdateStaffAsync(dto);
+            return StatusCode(response.StatusCode, response);
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult>DeleteStaffAsync(DeleteStaffDto dto)
+        {
+            dto.DeletedBy = ClaimsHelper.GetUserId(User);
+            var response = await _staffService.DeleteStaffAsync(dto);
+
             return StatusCode(response.StatusCode, response);
         }
     }

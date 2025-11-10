@@ -1,0 +1,12 @@
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\bin\Debug\net8.0\SmartServe.Domain.deps.json
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\bin\Debug\net8.0\SmartServe.Domain.dll
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\bin\Debug\net8.0\SmartServe.Domain.pdb
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\SmartServe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\SmartServe.Domain.AssemblyInfoInputs.cache
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\SmartServe.Domain.AssemblyInfo.cs
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\SmartServe.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\SmartServe.Domain.sourcelink.json
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\SmartServe.Domain.dll
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\refint\SmartServe.Domain.dll
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\SmartServe.Domain.pdb
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Domain\obj\Debug\net8.0\ref\SmartServe.Domain.dll

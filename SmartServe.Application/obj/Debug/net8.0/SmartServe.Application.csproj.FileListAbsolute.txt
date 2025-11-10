@@ -1,0 +1,16 @@
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\bin\Debug\net8.0\SmartServe.Application.deps.json
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\bin\Debug\net8.0\SmartServe.Application.dll
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\bin\Debug\net8.0\SmartServe.Application.pdb
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\bin\Debug\net8.0\SmartServe.Domain.dll
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\bin\Debug\net8.0\SmartServe.Domain.pdb
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartServe.Application.csproj.AssemblyReference.cache
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartServe.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartServe.Application.AssemblyInfoInputs.cache
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartServe.Application.AssemblyInfo.cs
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartServe.Application.csproj.CoreCompileInputs.cache
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartServe.Application.sourcelink.json
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartSer.01799083.Up2Date
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartServe.Application.dll
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\refint\SmartServe.Application.dll
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\SmartServe.Application.pdb
+C:\Users\rinsh\source\repos\SmartServe\SmartServe.Application\obj\Debug\net8.0\ref\SmartServe.Application.dll

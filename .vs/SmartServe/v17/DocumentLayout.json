@@ -1,12 +1,804 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\services\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\services\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.infrastructure\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|solutionrelative:smartserve.infrastructure\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\services\\istaffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\services\\istaffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\repository\\istaffrepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\repository\\istaffrepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\models\\staff\\staffmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\models\\staff\\staffmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\staffdto\\createstaffdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\staffdto\\createstaffdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\models\\departments\\departmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\models\\departments\\departmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\repository\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\repository\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\departmentdto\\updatedepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\departmentdto\\updatedepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\models\\auth\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\models\\auth\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\techniciandto\\createtechniciandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\techniciandto\\createtechniciandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\common\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\common\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|solutionrelative:smartserve.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\helpers\\claimshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\helpers\\claimshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.infrastructure\\extensions\\dependencyinjections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|solutionrelative:smartserve.infrastructure\\extensions\\dependencyinjections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\departmentdto\\createdepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\departmentdto\\createdepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.infrastructure\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|solutionrelative:smartserve.infrastructure\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\authdto\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\authdto\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\repository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\repository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F2B74E4-38C9-8FA7-5121-1543BB8DCABC}|SmartServe.Domain\\SmartServe.Domain.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.domain\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F2B74E4-38C9-8FA7-5121-1543BB8DCABC}|SmartServe.Domain\\SmartServe.Domain.csproj|solutionrelative:smartserve.domain\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\authdto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\authdto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\authdto\\authreponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\authdto\\authreponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\emailservice.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\emailservice.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|solutionrelative:smartserve.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\userdto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\userdto\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\userdto\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\userdto\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\smartserve.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\smartserve.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.infrastructure\\smartserve.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9206F3BC-0062-F415-7E6A-EDF975980583}|SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj|solutionrelative:smartserve.infrastructure\\smartserve.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\StaffService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Services\\StaffService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\StaffService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Services\\StaffService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:28:26.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IStaffService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IStaffService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IStaffService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IStaffService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IStaffService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:28:44.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "SmartServe.WebApi\\Controllers\\StaffController.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "SmartServe.WebApi\\Controllers\\StaffController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:41:18.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DepartmentModel.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Departments\\DepartmentModel.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Models\\Departments\\DepartmentModel.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Departments\\DepartmentModel.cs",
+              "RelativeToolTip": "SmartServe.Application\\Models\\Departments\\DepartmentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:24:45.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Services\\DepartmentService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\DepartmentService.cs*",
+              "RelativeToolTip": "SmartServe.Application\\Services\\DepartmentService.cs*",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAADkAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:25:48.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "SmartServe.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Program.cs",
+              "RelativeToolTip": "SmartServe.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T09:16:06.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IDepartmentService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IDepartmentService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IDepartmentService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IDepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:25:28.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IStaffRepository.cs.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IStaffRepository.cs.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Repository\\IStaffRepository.cs.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IStaffRepository.cs.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Repository\\IStaffRepository.cs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:32:39.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StaffRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\StaffRepository.cs",
+              "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Repositories\\StaffRepository.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\StaffRepository.cs",
+              "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\StaffRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAowE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:34:17.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAswDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T09:25:25.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateStaffDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\StaffDto\\CreateStaffDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\StaffDto\\CreateStaffDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\StaffDto\\CreateStaffDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\StaffDto\\CreateStaffDto.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:22:54.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffModel.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Staff\\StaffModel.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Models\\Staff\\StaffModel.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Staff\\StaffModel.cs",
+              "RelativeToolTip": "SmartServe.Application\\Models\\Staff\\StaffModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:59:29.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Helpers\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Helpers\\PasswordHelper.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Helpers\\PasswordHelper.cs",
+              "RelativeToolTip": "SmartServe.Application\\Helpers\\PasswordHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T14:21:38.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Auth\\UserModel.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Models\\Auth\\UserModel.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Auth\\UserModel.cs",
+              "RelativeToolTip": "SmartServe.Application\\Models\\Auth\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:37:48.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "SmartServe.WebApi\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "SmartServe.WebApi\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwDoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:42:21.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Repository\\IDepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IDepartmentRepository.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Repository\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:26:59.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateDepartmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\DepartmentDto\\UpdateDepartmentDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\DepartmentDto\\UpdateDepartmentDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\DepartmentDto\\UpdateDepartmentDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\DepartmentDto\\UpdateDepartmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:23:21.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateTechnicianDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\TechnicianDto\\CreateTechnicianDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\TechnicianDto\\CreateTechnicianDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\TechnicianDto\\CreateTechnicianDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\TechnicianDto\\CreateTechnicianDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:46:34.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:22:39.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Common\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Common\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Common\\ApiResponse.cs",
+              "RelativeToolTip": "SmartServe.Application\\Common\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:33:23.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DependencyInjections.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
+              "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
+              "RelativeToolTip": "SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T09:24:30.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ClaimsHelper.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Helpers\\ClaimsHelper.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Helpers\\ClaimsHelper.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Helpers\\ClaimsHelper.cs",
+              "RelativeToolTip": "SmartServe.Application\\Helpers\\ClaimsHelper.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T11:56:27.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SmartServe.WebApi\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SmartServe.WebApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:48:29.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateDepartmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\DepartmentDto\\CreateDepartmentDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\DepartmentDto\\CreateDepartmentDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\DepartmentDto\\CreateDepartmentDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\DepartmentDto\\CreateDepartmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T17:21:26.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
+              "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T10:06:03.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T10:06:13.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RegisterUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\RegisterUserDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\AuthDto\\RegisterUserDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\RegisterUserDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\AuthDto\\RegisterUserDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAswBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T06:48:20.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Settings\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Settings\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Settings\\JwtSettings.cs",
+              "RelativeToolTip": "SmartServe.Application\\Settings\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T07:13:18.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AuthReponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\AuthReponseDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\AuthDto\\AuthReponseDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\AuthReponseDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\AuthDto\\AuthReponseDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAApwA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T06:48:20.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "SmartServe.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\appsettings.json",
+              "RelativeToolTip": "SmartServe.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-07T06:48:21.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\AuthDto\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\LoginRequestDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\AuthDto\\LoginRequestDto.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T06:48:18.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Services\\JwtTokenService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Services\\JwtTokenService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswCMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T07:15:20.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Domain\\Enums\\Roles.cs",
+              "RelativeDocumentMoniker": "SmartServe.Domain\\Enums\\Roles.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Domain\\Enums\\Roles.cs",
+              "RelativeToolTip": "SmartServe.Domain\\Enums\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T08:31:31.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EmailService.cs.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\EmailService.cs.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Services\\EmailService.cs.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\EmailService.cs.cs",
+              "RelativeToolTip": "SmartServe.Application\\Services\\EmailService.cs.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA8wBoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:23:59.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IEmailService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:23:37.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:47:28.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:46:34.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IUserService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:46:16.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:46:08.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\UserDto\\CreateUserDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\CreateUserDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\UserDto\\CreateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:45:51.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\UserDto\\UpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\UpdateUserDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\UserDto\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:45:43.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\UserDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\UserDto\\UserDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\UserDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\UserDto\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:45:20.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SmartServe.WebApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SmartServe.WebApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T10:14:48.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IJwtTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IJwtTokenService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IJwtTokenService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IJwtTokenService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IJwtTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T07:14:31.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IAuthService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T06:48:20.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "SmartServe.WebApi.csproj",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\SmartServe.WebApi.csproj",
+              "RelativeDocumentMoniker": "SmartServe.WebApi\\SmartServe.WebApi.csproj",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\SmartServe.WebApi.csproj",
+              "RelativeToolTip": "SmartServe.WebApi\\SmartServe.WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-07T09:44:21.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "SmartServe.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj",
+              "RelativeToolTip": "SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-07T06:48:21.024Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
