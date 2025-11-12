@@ -4,7 +4,7 @@ namespace SmartServe.Application.Helpers
 {
     public static class ClaimsHelper
     {
-        public static int GetUserId(ClaimsPrincipal user)
+        public static int GetUserId(this ClaimsPrincipal user)
         {
             // 1. Standard JWT name identifier
             var id = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;

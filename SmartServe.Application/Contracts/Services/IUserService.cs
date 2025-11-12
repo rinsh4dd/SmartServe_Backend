@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SmartServe.Application.Common;
+using SmartServe.Application.DTOs;
+using SmartServe.Application.DTOs.AuthDto;
+using SmartServe.Application.DTOs.UserDto;
 
 namespace SmartServe.Application.Contracts.Services
 {
-    internal interface IUserService
+    public interface IUserService
     {
+        Task<ApiResponse<int>> CreateUserAsync(CreateUserDto dto);
+        Task<ApiResponse<IEnumerable<UserResponseDto>>> GetAllAsync();
+        Task<ApiResponse<object>> GetUserByIdAsync(int userId);
+        Task<ApiResponse<UpdateUserDto>> UpdateUserAsync(UpdateUserDto dto);
+        Task<ApiResponse<DeleteUserDto>> DeleteUserAsync(DeleteUserDto dto);
+        Task<ApiResponse<string>> ChangePasswordAsync(ChangePasswordDto dto);
+        Task<ApiResponse<string>> ForgotPasswordAsync(ForgotPasswordDto dto);
+        Task<ApiResponse<string>> ResetPasswordAsync(ResetPasswordDto dto);
     }
 }

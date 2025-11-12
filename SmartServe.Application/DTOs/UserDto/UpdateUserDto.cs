@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
+using SmartServe.Domain.Enums;
 
-namespace SmartServe.Application.DTOs.UserDto
+public class UpdateUserDto
 {
-    internal class UpdateUserDto
-    {
-    }
+    public int UserId { get; set; }
+    public string? UserName { get; set; }
+    public Roles Role { get; set; }
+    public bool? IsActive { get; set; }
+
+    [JsonIgnore]
+    public int ModifiedBy { get; set; }
 }

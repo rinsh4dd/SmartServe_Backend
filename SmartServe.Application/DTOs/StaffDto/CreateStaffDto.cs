@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace SmartServe.Application.DTOs.StaffDto
 {
@@ -11,7 +12,7 @@ namespace SmartServe.Application.DTOs.StaffDto
         [Required]
         [EmailAddress]
         public string UserEmail { get; set; } = string.Empty;
-
+        [JsonIgnore]
         public string? Password { get; set; }
 
         [Required]
@@ -22,7 +23,7 @@ namespace SmartServe.Application.DTOs.StaffDto
 
         [Range(0, double.MaxValue)]
         public decimal Salary { get; set; }
-
+        [JsonIgnore]
         public int CreatedBy { get; set; }
     }
 }

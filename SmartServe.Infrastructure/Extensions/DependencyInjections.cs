@@ -16,10 +16,15 @@ namespace SmartServe.Infrastructure.Extensions
             services.AddScoped<IStaffService, StaffService>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IDepartmentService, DepartmentService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ITechnicianService, TechnicianService>();
+            
 
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IStaffRepository, StaffRepository>();
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITechnicianRepository, TechnicianRepository>();
 
             return services;
         }

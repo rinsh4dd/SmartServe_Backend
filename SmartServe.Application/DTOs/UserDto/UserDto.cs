@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace SmartServe.Application.DTOs.UserDto
 {
-    internal class UserDto
+    public class UserResponseDto
     {
+        public int UserId { get; set; }
+        public string UserName { get; set; } = string.Empty;
+        public string UserEmail { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
+        public bool IsActive { get; set; }
+        public bool IsDeleted { get; set; }
     }
+
 }
