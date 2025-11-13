@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartServe.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dda37aeced581687bc40876d9e30bd190a6a2017")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee4f66004ee99a655fc74ababd749bf0f1fb84ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartServe.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartServe.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

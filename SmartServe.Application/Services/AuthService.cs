@@ -1,22 +1,25 @@
-﻿using SmartServe.Application.Contracts.Services;
+﻿using SmartServe.Application.Contracts.Repository;
+using SmartServe.Application.Contracts.Services;
 using SmartServe.Application.DTOs.AuthDto;
+using SmartServe.Domain.Enums;
 
 public class AuthService : IAuthService
 {
     private readonly IAuthRepository _authRepository;
     private readonly IJwtTokenService _jwtTokenService;
+    private readonly ICustomerRespository _customerRespository;
 
-    public AuthService(IAuthRepository authRepository, IJwtTokenService jwt)
+
+    public AuthService(IAuthRepository authRepository, IJwtTokenService jwt, ICustomerRespository customerRespository)
     {
         _authRepository = authRepository;
         _jwtTokenService = jwt;
+        _customerRespository = customerRespository;
     }
-
     public async Task<AuthReponseDto> RegisterUserAsync(RegisterUserDto dto)
     {
         dto.Password = BCrypt.Net.BCrypt.HashPassword(dto.Password);
         dto.UserEmail = dto.UserEmail.ToLower().Trim();
-
 
         int result = await _authRepository.RegisterUserAsync(dto);
 
@@ -24,7 +27,14 @@ public class AuthService : IAuthService
             return new AuthReponseDto(400, "Email already used");
 
         if (result > 0)
+        {
+            if (dto.Role == Roles.Customer)
+            {
+                await _customerRespository.AddCustomerForUserAsync(result, dto.UserEmail,dto.UserName);
+            }
+
             return new AuthReponseDto(201, "User registered successfully!");
+        }
 
         return new AuthReponseDto(400, "Registration failed");
     }

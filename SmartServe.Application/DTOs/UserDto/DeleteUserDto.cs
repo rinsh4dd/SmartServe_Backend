@@ -8,5 +8,4 @@ namespace SmartServe.Application.DTOs.UserDto
         [JsonIgnore]
         public int DeletedBy { get; set; }
     }
-
 }

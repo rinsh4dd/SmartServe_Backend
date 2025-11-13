@@ -31,7 +31,10 @@ namespace SmartServe.Application.Services
         public async Task<ApiResponse<IEnumerable<DepartmentModel>>> GetAllDepartments()
         {
             var data = await _departmentRepository.GetAllAsync();
-
+            if (data == null)
+            {
+                 return new ApiResponse<IEnumerable<DepartmentModel>>(400, "Failed To Fetch Departments");
+            }
             return new ApiResponse<IEnumerable<DepartmentModel>>(200, "Success", data);
         }
 

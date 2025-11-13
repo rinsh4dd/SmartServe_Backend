@@ -9,6 +9,7 @@ namespace SmartServe.Infrastructure.Repositories
     public class AuthRepository : IAuthRepository
     {
         private readonly IDbConnection _db;
+
         public AuthRepository(IDbConnection db)
         {
             _db = db;
@@ -25,37 +26,37 @@ namespace SmartServe.Infrastructure.Repositories
                 parameters.Add("@PASSWORDHASH", dto.Password);
                 parameters.Add("@ROLE", dto.Role.ToString());
                 parameters.Add("@CREATEDBY", dto.CreatedBy ?? (object)DBNull.Value, DbType.Int32);
-                return await _db.ExecuteScalarAsync<int>(
+
+                var result = await _db.ExecuteScalarAsync<int>(
                     "SP_USERS",
                     parameters,
                     commandType: CommandType.StoredProcedure
                 );
-            }
-            catch (SqlException ex) when ( ex.Number == 50000)
-            {
-                return -1;
-            }
 
-        }
-
-        public Task<UserModel?> GetUserByEmailAsync(string email)
-        {
-            try
-            {
-                var parameters = new DynamicParameters();
-                parameters.Add("@FLAG", "GET_BY_EMAIL");
-                parameters.Add("@USEREMAIL", email);
-                return _db.QueryFirstOrDefaultAsync<UserModel>(
-                    "SP_USERS",
-                    parameters,
-                    commandType: CommandType.StoredProcedure
-                );
+                return result;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                if (ex.Number == 50000 && ex.Message.Contains("Email already used", StringComparison.OrdinalIgnoreCase))
+                    return -1;
+
                 throw;
             }
+        }
 
+        public async Task<UserModel?> GetUserByEmailAsync(string email)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@FLAG", "GET_BY_EMAIL");
+            parameters.Add("@USEREMAIL", email);
+
+            var user = await _db.QueryFirstOrDefaultAsync<UserModel>(
+                "SP_USERS",
+                parameters,
+                commandType: CommandType.StoredProcedure
+            );
+
+            return user;
         }
     }
 }

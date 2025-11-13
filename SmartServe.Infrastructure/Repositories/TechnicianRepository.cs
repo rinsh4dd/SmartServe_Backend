@@ -12,7 +12,6 @@ public class TechnicianRepository : ITechnicianRepository
         _db = db;
     }
 
-    // ✅ CREATE TECHNICIAN (called when user with role = Technician is created)
     public async Task<int> CreateTechnicianAsync(int userId, int createdBy)
     {
         var p = new DynamicParameters();
@@ -27,7 +26,6 @@ public class TechnicianRepository : ITechnicianRepository
         );
     }
 
-    // ✅ GET ALL TECHNICIANS
     public async Task<IEnumerable<TechnicianResponseDto>> GetAllAsync()
     {
         var p = new DynamicParameters();
@@ -40,7 +38,6 @@ public class TechnicianRepository : ITechnicianRepository
         );
     }
 
-    // ✅ GET BY TECHNICIAN ID
     public async Task<TechnicianResponseDto?> GetByIdAsync(int technicianId)
     {
         var p = new DynamicParameters();
@@ -54,7 +51,6 @@ public class TechnicianRepository : ITechnicianRepository
         );
     }
 
-    // ✅ GET BY USER ID (for /me)
     public async Task<TechnicianResponseDto?> GetByUserIdAsync(int userId)
     {
         var p = new DynamicParameters();

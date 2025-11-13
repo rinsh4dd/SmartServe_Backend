@@ -16,12 +16,16 @@ namespace SmartServe.Application.Common
 
         public ApiResponse() { }
 
-        public ApiResponse(int statusCode, string? message = null, T?data = default)
+        public ApiResponse(int statusCode, string? message = null, T? data = default)
         {
             Data = data;
             Message = message;
             StatusCode = statusCode;
         }
+        public static ApiResponse<T> SuccessResponse(T data, string message = "Success", int statusCode = 200)
+                   => new(statusCode, message, data);
 
+        public static ApiResponse<T> FailResponse(string message, int statusCode = 400)
+            => new(statusCode, message, default);
     }
 }
