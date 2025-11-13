@@ -31,11 +31,57 @@ namespace SmartServe.Infrastructure.Repositories
             );
             return newVehichleId;
         }
+        public async Task<VehicleResponseDto> GetVehicleByIdAsync(int vehicleId)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@FLAG", "GETBYID");
+            parameters.Add("@VEHICLEID ", vehicleId);
+
+            return await _db.QueryFirstOrDefaultAsync<VehicleResponseDto>(
+                "SP_VEHICHLES",
+                parameters,
+                commandType: CommandType.StoredProcedure
+     );
+        }
         public Task<int> UpdateVehicleAsync(int userId, UpdateVehicleDto dto) => Task.FromResult(0);
-        public Task<int> DeleteVehicleAsync(int vehicleId, int userId) => Task.FromResult(0);
-        public Task<IEnumerable<VehicleResponseDto>> GetAllVehiclesAsync() => Task.FromResult<IEnumerable<VehicleResponseDto>>(null);
-        public Task<VehicleResponseDto> GetVehicleByIdAsync(int vehicleId) => Task.FromResult<VehicleResponseDto>(null);
-        public Task<IEnumerable<VehicleResponseDto>> GetVehiclesByCustomerAsync(int customerId) => Task.FromResult<IEnumerable<VehicleResponseDto>>(null);
+        public async Task<IEnumerable<VehicleResponseDto>> GetAllVehiclesAsync()
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@FLAG", "GETALL");
+
+            return await _db.QueryAsync<VehicleResponseDto>(
+            "SP_VEHICHLES",
+             parameters,
+             commandType: CommandType.StoredProcedure
+            );
+        }
+        public async Task<IEnumerable<VehicleResponseDto>> GetVehiclesByCustomerAsync(int customerId)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@FLAG", "GET_BY_CUSTOMER");
+            parameters.Add("CUSTOMERID", customerId);
+
+            return await _db.QueryAsync<VehicleResponseDto>(
+            "SP_VEHICHLES",
+            parameters,
+            commandType: CommandType.StoredProcedure
+            );
+        }
+        public async Task<int> DeleteVehicleAsync(int vehicleId, int deletedBy)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@FLAG", "DELETE");
+            parameters.Add("@DELETEDBY", deletedBy);
+            parameters.Add("@VEHICLEID", vehicleId);
+
+            return await _db.ExecuteScalarAsync<int>(
+            "SP_VEHICHLES",
+            parameters,
+            commandType: CommandType.StoredProcedure
+            );
+        }
+
+
     }
 
 }

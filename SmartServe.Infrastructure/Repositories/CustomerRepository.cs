@@ -31,23 +31,23 @@ namespace SmartServe.Infrastructure.Repositories
         }
 
 
-        public async Task<int> GetCustomerIdByUserIdAsync(int userId)
+        public async Task<dynamic> GetCustomerIdByCustomerIdAsync(int customerId)
         {
-            var query = "SELECT CustomerId FROM Customers WHERE UserId = @UserId AND IsDeleted = 0";
+            var parameters = new DynamicParameters();
 
-            var result = await _db.QuerySingleOrDefaultAsync<int?>(
-                query,
-                new { UserId = userId }
+            parameters.Add("@FLAG", "GETBYID");
+            parameters.Add("@CUSTOMERID", customerId);
+            return await _db.QueryFirstOrDefaultAsync<dynamic>(
+            "SP_CUSTOMERS",
+            parameters,
+            commandType: CommandType.StoredProcedure
             );
-
-            return result ?? 0;
         }
 
         public async Task<IEnumerable<dynamic>> GetAllCustomers()
         {
             var parameters = new DynamicParameters();
             parameters.Add("@FLAG", "GETALL");
-
             return await _db.QueryAsync<dynamic>(
             "SP_CUSTOMERS",
             parameters,

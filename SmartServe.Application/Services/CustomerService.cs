@@ -3,6 +3,7 @@ using SmartServe.Application.Contracts.Repository;
 using SmartServe.Application.Contracts.Services;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace SmartServe.Application.Services
@@ -26,6 +27,16 @@ namespace SmartServe.Application.Services
             }
 
             return new ApiResponse<IEnumerable<dynamic>>(200, "Customers retrieved successfully", data);
+        }
+
+        public async Task<ApiResponse<dynamic>> GetById(int userId)
+        {
+            var data = await _customerRepo.GetCustomerIdByCustomerIdAsync(userId);
+            if (data == null)
+            {
+                return new ApiResponse<dynamic>(404, $"No Customer found with id - {userId}");
+            }
+            return new ApiResponse<dynamic>(200, $"Success",data);
         }
     }
 }

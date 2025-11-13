@@ -21,6 +21,12 @@ namespace SmartServe.WebApi.Controllers
             var response = await _customerService.GetAllCustomersAsync();
             return StatusCode(response.StatusCode, response);
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var response = await _customerService.GetById(id);
+            return StatusCode(response.StatusCode, response);
+        }
     }
 }
 

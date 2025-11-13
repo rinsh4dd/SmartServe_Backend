@@ -19,6 +19,8 @@ namespace SmartServe.Infrastructure.Extensions
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ITechnicianService, TechnicianService>();
             services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IVehicleService, VehicleService>();
+
 
 
             services.AddScoped<IAuthRepository, AuthRepository>();

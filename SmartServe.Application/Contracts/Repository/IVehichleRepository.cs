@@ -6,9 +6,10 @@ namespace SmartServe.Application.Contracts.Repository
     {
         Task<int> AddVehicleAsync(int userId, int customerId, CreateVehicleDto dto);
         Task<int> UpdateVehicleAsync(int userId, UpdateVehicleDto dto);
-        Task<int> DeleteVehicleAsync(int vehicleId, int userId);
+        Task<int> DeleteVehicleAsync(int vehicleId, int deletedBy);
         Task<IEnumerable<VehicleResponseDto>> GetAllVehiclesAsync();
         Task<VehicleResponseDto> GetVehicleByIdAsync(int vehicleId);
         Task<IEnumerable<VehicleResponseDto>> GetVehiclesByCustomerAsync(int customerId);
+
     }
 }
