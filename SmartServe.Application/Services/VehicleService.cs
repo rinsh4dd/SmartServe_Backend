@@ -2,14 +2,6 @@ using SmartServe.Application.Common;
 using SmartServe.Application.Contracts.Repository;
 using SmartServe.Application.Contracts.Services;
 using SmartServe.Application.DTOs;
-using SmartServe.Application.DTOs.DepartmentDto;
-using SmartServe.Application.Models.Departments;
-using SmartServe.Infrastructure.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SmartServe.Application.Services
 {
@@ -40,15 +32,15 @@ namespace SmartServe.Application.Services
             return new ApiResponse<IEnumerable<VehicleResponseDto>>(200, "vehicle fetched successfully", result);
         }
 
-        public async Task<ApiResponse<IEnumerable<VehicleResponseDto>>> GetByCustomerId(int id)
+        public async Task<ApiResponse<IEnumerable<VehicleResponseDto>>> GetByCustomerId(int customerId)
         {
-            var result = await _vehichleRepository.GetVehiclesByCustomerAsync(id);
+            var result = await _vehichleRepository.GetVehiclesByCustomerAsync(customerId);
 
             if (result == null || !result.Any())
             {
                 return new ApiResponse<IEnumerable<VehicleResponseDto>>(
                     404,
-                    $"No vehicles found for customer ID {id}"
+                    $"No vehicles found for customer ID {customerId}"
                 );
             }
 
@@ -59,9 +51,9 @@ namespace SmartServe.Application.Services
             );
         }
 
-        public async Task<ApiResponse<int>> DeleteVehichleAsync(int vehicleId,int deletedBy)
+        public async Task<ApiResponse<int>> DeleteVehichleAsync(int vehicleId, int deletedBy)
         {
-            var data =await _vehichleRepository.DeleteVehicleAsync(vehicleId, deletedBy);
+            var data = await _vehichleRepository.DeleteVehicleAsync(vehicleId, deletedBy);
             if (data < 1 || data == 0)
             {
                 return new ApiResponse<int>(404, "no vehichle found");

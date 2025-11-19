@@ -210,8 +210,7 @@
               "RelativeToolTip": "SmartServe.Application\\Services\\StaffService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T09:28:26.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T09:28:26.353Z"
             },
             {
               "$type": "Document",
@@ -223,8 +222,7 @@
               "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IStaffService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T09:28:44.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T09:28:44.452Z"
             },
             {
               "$type": "Document",
@@ -236,8 +234,7 @@
               "RelativeToolTip": "SmartServe.WebApi\\Controllers\\StaffController.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAYwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T09:41:18.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T09:41:18.121Z"
             },
             {
               "$type": "Document",
@@ -249,8 +246,7 @@
               "RelativeToolTip": "SmartServe.Application\\Models\\Departments\\DepartmentModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:24:45.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:24:45.207Z"
             },
             {
               "$type": "Document",
@@ -258,9 +254,9 @@
               "Title": "DepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\DepartmentService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Services\\DepartmentService.cs",
-              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\DepartmentService.cs*",
-              "RelativeToolTip": "SmartServe.Application\\Services\\DepartmentService.cs*",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAADkAAABYAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Services\\DepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:25:48.148Z",
               "EditorCaption": ""
@@ -275,8 +271,7 @@
               "RelativeToolTip": "SmartServe.WebApi\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T09:16:06.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T09:16:06.348Z"
             },
             {
               "$type": "Document",
@@ -288,8 +283,7 @@
               "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IDepartmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:25:28.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:25:28.709Z"
             },
             {
               "$type": "Document",
@@ -301,8 +295,7 @@
               "RelativeToolTip": "SmartServe.Application\\Contracts\\Repository\\IStaffRepository.cs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T09:32:39.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T09:32:39.708Z"
             },
             {
               "$type": "Document",
@@ -314,8 +307,7 @@
               "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\StaffRepository.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAowE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T09:34:17.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T09:34:17.29Z"
             },
             {
               "$type": "Document",
@@ -327,8 +319,7 @@
               "RelativeToolTip": "SmartServe.Application\\Services\\AuthService.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAswDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T09:25:25.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T09:25:25.136Z"
             },
             {
               "$type": "Document",
@@ -340,8 +331,7 @@
               "RelativeToolTip": "SmartServe.Application\\DTOs\\StaffDto\\CreateStaffDto.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T09:22:54.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T09:22:54.894Z"
             },
             {
               "$type": "Document",
@@ -353,8 +343,7 @@
               "RelativeToolTip": "SmartServe.Application\\Models\\Staff\\StaffModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T04:59:29.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T04:59:29.502Z"
             },
             {
               "$type": "Document",
@@ -366,8 +355,7 @@
               "RelativeToolTip": "SmartServe.Application\\Helpers\\PasswordHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T14:21:38.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T14:21:38.239Z"
             },
             {
               "$type": "Document",
@@ -379,8 +367,7 @@
               "RelativeToolTip": "SmartServe.Application\\Models\\Auth\\UserModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T05:37:48.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T05:37:48.423Z"
             },
             {
               "$type": "Document",
@@ -392,8 +379,7 @@
               "RelativeToolTip": "SmartServe.WebApi\\Controllers\\DepartmentController.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAuwDoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:42:21.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:42:21.222Z"
             },
             {
               "$type": "Document",
@@ -405,8 +391,7 @@
               "RelativeToolTip": "SmartServe.Application\\Contracts\\Repository\\IDepartmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:26:59.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:26:59.222Z"
             },
             {
               "$type": "Document",
@@ -418,8 +403,7 @@
               "RelativeToolTip": "SmartServe.Application\\DTOs\\DepartmentDto\\UpdateDepartmentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:23:21.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:23:21.107Z"
             },
             {
               "$type": "Document",
@@ -431,8 +415,7 @@
               "RelativeToolTip": "SmartServe.Application\\DTOs\\TechnicianDto\\CreateTechnicianDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T04:46:34.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T04:46:34.589Z"
             },
             {
               "$type": "Document",
@@ -444,8 +427,7 @@
               "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\DepartmentRepository.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAwwFAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:22:39.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:22:39.251Z"
             },
             {
               "$type": "Document",
@@ -457,8 +439,7 @@
               "RelativeToolTip": "SmartServe.Application\\Common\\ApiResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:33:23.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:33:23.604Z"
             },
             {
               "$type": "Document",
@@ -470,8 +451,7 @@
               "RelativeToolTip": "SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T09:24:30.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T09:24:30.464Z"
             },
             {
               "$type": "Document",
@@ -483,8 +463,7 @@
               "RelativeToolTip": "SmartServe.Application\\Helpers\\ClaimsHelper.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T11:56:27.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T11:56:27.64Z"
             },
             {
               "$type": "Document",
@@ -496,8 +475,7 @@
               "RelativeToolTip": "SmartServe.WebApi\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T08:48:29.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T08:48:29.644Z"
             },
             {
               "$type": "Document",
@@ -509,8 +487,7 @@
               "RelativeToolTip": "SmartServe.Application\\DTOs\\DepartmentDto\\CreateDepartmentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:21:26.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:21:26.113Z"
             },
             {
               "$type": "Document",
@@ -522,8 +499,7 @@
               "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAA3wBAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T10:06:03.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T10:06:03.54Z"
             },
             {
               "$type": "Document",
@@ -535,8 +511,7 @@
               "RelativeToolTip": "SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T10:06:13.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T10:06:13.413Z"
             },
             {
               "$type": "Document",
@@ -548,8 +523,7 @@
               "RelativeToolTip": "SmartServe.Application\\DTOs\\AuthDto\\RegisterUserDto.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAswBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T06:48:20.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T06:48:20.884Z"
             },
             {
               "$type": "Document",
@@ -585,8 +559,7 @@
               "RelativeToolTip": "SmartServe.WebApi\\appsettings.json",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-07T06:48:21.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T06:48:21.08Z"
             },
             {
               "$type": "Document",
@@ -610,8 +583,7 @@
               "RelativeToolTip": "SmartServe.Application\\Services\\JwtTokenService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAswCMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T07:15:20.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T07:15:20.739Z"
             },
             {
               "$type": "Document",
@@ -755,8 +727,7 @@
               "RelativeToolTip": "SmartServe.Application\\Contracts\\Services\\IJwtTokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T07:14:31.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T07:14:31.334Z"
             },
             {
               "$type": "Document",
@@ -780,8 +751,7 @@
               "RelativeToolTip": "SmartServe.WebApi\\SmartServe.WebApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-07T09:44:21.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T09:44:21.346Z"
             },
             {
               "$type": "Document",
@@ -793,8 +763,7 @@
               "RelativeToolTip": "SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-07T06:48:21.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T06:48:21.024Z"
             }
           ]
         }

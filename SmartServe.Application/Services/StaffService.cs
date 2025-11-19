@@ -39,7 +39,7 @@ namespace SmartServe.Application.Services
                 CreatedBy = dto.CreatedBy
             };
 
-            var userId = await _authRepository.RegisterUserAsync(userDto);
+            var userId = await _authRepository.RegisterUserAsyncNoTr(userDto);
             if (userId <= 0)
             {
                 return new AuthReponseDto(400, "Failed to create Staff user account.");

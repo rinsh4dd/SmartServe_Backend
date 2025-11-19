@@ -14,7 +14,7 @@ namespace SmartServe.Application.Services
         private readonly ITechnicianRepository _technicianRepo;
         private readonly IEmailService _emailService;
 
-        public UserService(
+        public UserService  (
             IUserRepository repo,
             ITechnicianRepository technicianRepo,
             IEmailService emailService)

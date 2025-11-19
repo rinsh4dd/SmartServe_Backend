@@ -18,26 +18,45 @@ public class AuthService : IAuthService
     }
     public async Task<AuthReponseDto> RegisterUserAsync(RegisterUserDto dto)
     {
-        dto.Password = BCrypt.Net.BCrypt.HashPassword(dto.Password);
         dto.UserEmail = dto.UserEmail.ToLower().Trim();
+        dto.Password = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
-        int result = await _authRepository.RegisterUserAsync(dto);
-
-        if (result == -1)
-            return new AuthReponseDto(400, "Email already used");
-
-        if (result > 0)
+        using (var connection = _authRepository.GetConnection())
         {
-            if (dto.Role == Roles.Customer)
+            connection.Open();
+            using (var transaction = connection.BeginTransaction())
             {
-                await _customerRespository.AddCustomerForUserAsync(result, dto.UserEmail,dto.UserName);
+                try
+                {
+                    // 1️⃣ INSERT USER
+                    int userId = await _authRepository.RegisterUserAsync(dto, transaction);
+                    if (userId == -1)
+                        return new AuthReponseDto(400, "Email already used");
+
+                    // 2️⃣ INSERT CUSTOMER
+                    if (dto.Role == Roles.Customer)
+                    {
+                        await _customerRespository.AddCustomerForUserAsync(
+                            userId,
+                            dto.UserEmail,
+                            dto.UserName,
+                            transaction
+                        );
+                    }
+
+                    // ALL GOOD → Commit
+                    transaction.Commit();
+                    return new AuthReponseDto(201, "User registered successfully!");
+                }
+                catch (Exception)
+                {
+                    transaction.Rollback();
+                    throw;
+                }
             }
-
-            return new AuthReponseDto(201, "User registered successfully!");
         }
-
-        return new AuthReponseDto(400, "Registration failed");
     }
+
 
     public async Task<AuthReponseDto> LoginUserAsync(LoginRequestDto dto)
     {

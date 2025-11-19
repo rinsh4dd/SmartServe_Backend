@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartServe.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ca0337d3807d100a8e39867f4f8d63386a394c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de10902b8df38e6e8e44930513b97dea91965388")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartServe.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartServe.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

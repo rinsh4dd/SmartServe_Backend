@@ -64,26 +64,25 @@ public class TechnicianRepository : ITechnicianRepository
         );
     }
 
-    // ✅ UPDATE PROFILE (Technician updates Experience + Bio)
     public async Task<bool> UpdateProfileAsync(int userId, UpdateTechnicianProfileDto dto, int modifiedBy)
     {
         var p = new DynamicParameters();
         p.Add("@FLAG", "UPDATE_PROFILE");
         p.Add("@USERID", userId);
-
         p.Add("@EXPERIENCE", dto.Experience);
         p.Add("@BIO", dto.Bio);
-
         p.Add("@MODIFIEDBY", modifiedBy);
 
-        return await _db.ExecuteAsync(
+        var result = await _db.ExecuteAsync(
             "SP_TECHNICIANS",
             p,
             commandType: CommandType.StoredProcedure
-        ) > 0;
+        );
+
+        return result > 0;
     }
 
-    // ✅ UPDATE STATUS (Admin)
+
     public async Task<bool> UpdateStatusAsync(int technicianId, string status, int modifiedBy)
     {
         var p = new DynamicParameters();
@@ -99,7 +98,6 @@ public class TechnicianRepository : ITechnicianRepository
         ) > 0;
     }
 
-    // ✅ SET AVAILABILITY (Admin / Staff)
     public async Task<bool> SetAvailabilityAsync(int technicianId, bool isAvailable, int modifiedBy)
     {
         var p = new DynamicParameters();
@@ -115,7 +113,6 @@ public class TechnicianRepository : ITechnicianRepository
         ) > 0;
     }
 
-    // ✅ SOFT DELETE (Admin)
     public async Task<bool> DeleteAsync(int technicianId, int deletedBy)
     {
         var p = new DynamicParameters();
@@ -130,7 +127,6 @@ public class TechnicianRepository : ITechnicianRepository
         ) > 0;
     }
 
-    // ✅ RESTORE TECHNICIAN
     public async Task<bool> RestoreAsync(int technicianId, int modifiedBy)
     {
         var p = new DynamicParameters();

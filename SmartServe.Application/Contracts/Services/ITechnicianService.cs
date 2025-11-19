@@ -8,7 +8,7 @@ namespace SmartServe.Application.Contracts.Services
         Task<ApiResponse<IEnumerable<TechnicianResponseDto>>> GetAllAsync();
         Task<ApiResponse<TechnicianResponseDto>> GetByIdAsync(int technicianId);
         Task<ApiResponse<TechnicianResponseDto>> GetByUserIdAsync(int userId);
-        Task<ApiResponse<bool>> UpdateProfileAsync(int userId, UpdateTechnicianProfileDto dto, int modifiedBy);
+        Task<ApiResponse<int>> UpdateProfileAsync(int userId, UpdateTechnicianProfileDto dto, int modifiedBy);
         Task<ApiResponse<bool>> UpdateStatusAsync(int technicianId, string status, int modifiedBy);
         Task<ApiResponse<bool>> SetAvailabilityAsync(int technicianId, bool isAvailable, int modifiedBy);
 

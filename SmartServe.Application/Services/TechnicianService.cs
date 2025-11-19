@@ -40,14 +40,14 @@ namespace SmartServe.Application.Services
             return new ApiResponse<TechnicianResponseDto>(200, "Success", tech);
         }
 
-        public async Task<ApiResponse<bool>> UpdateProfileAsync(int userId, UpdateTechnicianProfileDto dto, int modifiedBy)
+        public async Task<ApiResponse<int>> UpdateProfileAsync(int userId, UpdateTechnicianProfileDto dto, int modifiedBy)
         {
             var updated = await _repo.UpdateProfileAsync(userId, dto, modifiedBy);
 
-            if (!updated)
-                return new ApiResponse<bool>(400, "Update failed.");
+            if (updated)
+                return new ApiResponse<int>(400, "Update failed.");
 
-            return new ApiResponse<bool>(200, "Profile updated successfully.", true);
+            return new ApiResponse<int>(200, "Profile updated successfully.");
         }
 
         public async Task<ApiResponse<bool>> SetAvailabilityAsync(int technicianId, bool isAvailable, int modifiedBy)

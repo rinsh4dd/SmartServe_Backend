@@ -12,7 +12,7 @@ namespace SmartServe.Infrastructure.Repositories
         {
             _db = db;
         }
-        public async Task<int> AddVehicleAsync(int userId, int customerId, CreateVehicleDto dto)
+        public async Task<int> AddVehicleAsync(int customerId, int createdBy, CreateVehicleDto dto)
         {
             var parameters = new DynamicParameters();
             parameters.Add("@FLAG", "INSERT");
@@ -22,15 +22,16 @@ namespace SmartServe.Infrastructure.Repositories
             parameters.Add("@YEAR", dto.Year);
             parameters.Add("@DESCRIPTION", dto.Description);
             parameters.Add("@BRAND", dto.Brand);
-            parameters.Add("@CREATEDBY", userId);
-            string fuelTypeValue = dto.FuelType.ToString();
-            parameters.Add("@FUELTYPE", fuelTypeValue);
+            parameters.Add("@CREATEDBY", createdBy);
+            parameters.Add("@FUELTYPE", dto.FuelType.ToString());
 
-            var newVehichleId = await _db.ExecuteScalarAsync<int>(
-            "SP_VEHICHLES", parameters, commandType: CommandType.StoredProcedure
+            return await _db.ExecuteScalarAsync<int>(
+                "SP_VEHICHLES",
+                parameters,
+                commandType: CommandType.StoredProcedure
             );
-            return newVehichleId;
         }
+
         public async Task<VehicleResponseDto> GetVehicleByIdAsync(int vehicleId)
         {
             var parameters = new DynamicParameters();
