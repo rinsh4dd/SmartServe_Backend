@@ -11,7 +11,7 @@ namespace SmartServe.Infrastructure.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            
+
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IJwtTokenService, JwtTokenService>();
             services.AddScoped<IStaffService, StaffService>();
@@ -23,10 +23,10 @@ namespace SmartServe.Infrastructure.Extensions
             services.AddScoped<IVehicleService, VehicleService>();
             services.AddScoped<IAppointmentService, AppointmentService>();
             services.AddScoped<CustomerHelper>();
-
-
-
+            services.AddScoped<IServiceJobService, ServiceJobService>();
+            services.AddScoped<IInventoryService, InventoryService>();
             //repos
+            services.AddScoped<IServiceJobRepository, ServiceJobRepository>();
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IStaffRepository, StaffRepository>();
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
@@ -34,7 +34,8 @@ namespace SmartServe.Infrastructure.Extensions
             services.AddScoped<ITechnicianRepository, TechnicianRepository>();
             services.AddScoped<IVehichleRepository, VehicleRepository>();
             services.AddScoped<ICustomerRespository, CustomerRepository>();
-            services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+            services.AddScoped<IAppointmentsRepository, AppointmentsRepository>();
+            services.AddScoped<IInventoryRepository, InventoryRepository>();
 
             return services;
         }

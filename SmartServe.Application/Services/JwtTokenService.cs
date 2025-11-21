@@ -25,6 +25,7 @@ namespace SmartServe.Application.Services
 
             var claims = new[]
             {
+                 new Claim("UserId", user.UserId.ToString()), 
                 new Claim(JwtRegisteredClaimNames.Sub, user.UserId.ToString()),
                 new Claim(JwtRegisteredClaimNames.Email, user.UserEmail),
                 new Claim(ClaimTypes.Role, user.Role),
@@ -36,7 +37,7 @@ namespace SmartServe.Application.Services
                 audience: _jwt.Audience,
                 claims: claims,
                 expires: DateTime.UtcNow.AddDays(1),
-                signingCredentials: creds 
+                signingCredentials: creds
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);

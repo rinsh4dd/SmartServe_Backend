@@ -43,7 +43,6 @@ namespace SmartServe.Infrastructure.Repositories
                 "SP_STAFF", parameters, commandType: CommandType.StoredProcedure
                 );
         }
-
         public async Task<dynamic> GetByIdAsync(int id)
         {
             var parameters = new DynamicParameters();
@@ -52,11 +51,8 @@ namespace SmartServe.Infrastructure.Repositories
             var result = await _db.QueryFirstOrDefaultAsync<dynamic>(
                 "SP_STAFF", parameters, commandType: CommandType.StoredProcedure
             );
-
             return result;
-
         }
-
         public async Task<int> UpdateAsync(UpdateStaffDto dto)
         {
             var parameters = new DynamicParameters();
@@ -83,17 +79,46 @@ namespace SmartServe.Infrastructure.Repositories
             parameters.Add("@FLAG", "DELETE");
             parameters.Add("@STAFFID", dto.StaffId);
             parameters.Add("@DELETEDBY", dto.DeletedBy);
-
             var result = await _db.ExecuteScalarAsync<int>(
                 "SP_STAFF",
                 parameters,
                 commandType: CommandType.StoredProcedure
             );
-
             return result;
         }
+        public async Task<int> GetStaffDepartmentAsync(int staffId)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@FLAG", "GET_DEPARTMENT_BY_STAFFID");
+            parameters.Add("@STAFFID", staffId);
 
+            return await _db.QueryFirstOrDefaultAsync<int>(
+                "SP_STAFF",
+                parameters,
+                commandType: CommandType.StoredProcedure
+            );
+        }
 
+        public async Task<int> GetStaffIdByUserIdAsync(int userId)
+        {
+            var sql = @"SELECT StaffId 
+                    FROM Staff 
+                    WHERE UserId = @U
+                    AND IsActive = 1
+                    AND IsDeleted = 0";
+            return await _db.QueryFirstOrDefaultAsync<int>(sql, new { U = userId });
+        }
+
+        public async Task<int> GetDepartmentIdByUserIdAsync(int userId)
+        {
+            var sql = @"SELECT DepartmentId 
+                FROM Staff
+                WHERE UserId = @U
+                AND IsActive = 1
+                AND IsDeleted = 0";
+
+            return await _db.QueryFirstOrDefaultAsync<int>(sql, new { U = userId });
+        }
 
     }
 }

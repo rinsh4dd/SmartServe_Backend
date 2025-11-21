@@ -3,6 +3,8 @@ namespace SmartServe.Application.DTOs
     public class VehicleResponseDto
     {
         public int VehicleId { get; set; }
+        public int CustomerId { get; set; }
+
         public string CustomerName { get; set; }
         public string VehicleNumber { get; set; }
         public string Model { get; set; }

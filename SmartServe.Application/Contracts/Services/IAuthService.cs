@@ -7,5 +7,6 @@ namespace SmartServe.Application.Contracts.Services
     {
         Task<AuthReponseDto> RegisterUserAsync(RegisterUserDto dto);
         Task<AuthReponseDto> LoginUserAsync(LoginRequestDto dto );
+        
     }
 }

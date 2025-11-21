@@ -1,4 +1,5 @@
-﻿using SmartServe.Application.Contracts.Repository;
+﻿using SmartServe.Application.Common;
+using SmartServe.Application.Contracts.Repository;
 using SmartServe.Application.Contracts.Services;
 using SmartServe.Application.DTOs.AuthDto;
 using SmartServe.Domain.Enums;
@@ -28,12 +29,10 @@ public class AuthService : IAuthService
             {
                 try
                 {
-                    // 1️⃣ INSERT USER
                     int userId = await _authRepository.RegisterUserAsync(dto, transaction);
                     if (userId == -1)
                         return new AuthReponseDto(400, "Email already used");
 
-                    // 2️⃣ INSERT CUSTOMER
                     if (dto.Role == Roles.Customer)
                     {
                         await _customerRespository.AddCustomerForUserAsync(
@@ -44,7 +43,7 @@ public class AuthService : IAuthService
                         );
                     }
 
-                    // ALL GOOD → Commit
+
                     transaction.Commit();
                     return new AuthReponseDto(201, "User registered successfully!");
                 }
@@ -82,4 +81,7 @@ public class AuthService : IAuthService
 
         return new AuthReponseDto(200, "Login successful", token);
     }
+
+
 }
+

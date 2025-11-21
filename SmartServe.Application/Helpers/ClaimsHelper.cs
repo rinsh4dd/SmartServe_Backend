@@ -38,5 +38,16 @@ namespace SmartServe.Application.Helpers
                 ?? user.FindFirst("UserEmail")?.Value
                 ?? string.Empty;
         }
+
+        public static LoggedInUser GetUser(ClaimsPrincipal user)
+        {
+            return new LoggedInUser
+            {
+                UserId = int.Parse(user.FindFirst("UserId").Value),
+                Role = user.FindFirst(ClaimTypes.Role)?.Value ?? "Unknown"
+            };
+        }
+
+
     }
 }
