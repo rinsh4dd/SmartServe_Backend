@@ -30,17 +30,30 @@ public class ServiceJobService : IServiceJobService
 
         return new ApiResponse<int>(200, "Product added to job successfully", result);
     }
-    public async Task<ApiResponse<int>> CompleteJobAsync(int serviceJobId, int userId, string workDescription = null)
+    public async Task<ApiResponse<int>> CompleteJobAsync(CompleteJobDto dto, int userId)
     {
         try
         {
-            var jobRaw = await _repo.GetJobByIdAsync(serviceJobId);
-            if (jobRaw == null || jobRaw.Job == null) return new ApiResponse<int>(404, "Job not found.");
-            int jobTechId = (int)jobRaw.Job.TechnicianId;
-            if (jobTechId != userId) return new ApiResponse<int>(403, "Not authorized to complete this job.");
+            // Validate job
+            var jobRaw = await _repo.GetJobByIdAsync(dto.ServiceJobId);
+            if (jobRaw == null || jobRaw.Job == null)
+                return new ApiResponse<int>(404, "Job not found.");
 
-            var billingId = await _repo.CompleteJobAsync(serviceJobId, userId, workDescription);
-            if (billingId <= 0) return new ApiResponse<int>(400, "Failed to complete job.");
+            int jobTechId = (int)jobRaw.Job.TechnicianId;
+
+            // Only assigned technician can complete
+            if (jobTechId != userId)
+                return new ApiResponse<int>(403, "Not authorized to complete this job.");
+
+            // Labour charge required
+            if (dto.LabourCharge <= 0)
+                return new ApiResponse<int>(400, "Labour charge is required.");
+
+            // Complete job
+            var billingId = await _repo.CompleteJobAsync(dto, userId);
+            if (billingId <= 0)
+                return new ApiResponse<int>(400, "Failed to complete job.");
+
             return new ApiResponse<int>(200, "Job completed. Billing created.", billingId);
         }
         catch (Exception ex)
@@ -48,6 +61,7 @@ public class ServiceJobService : IServiceJobService
             return new ApiResponse<int>(500, ex.Message);
         }
     }
+
 
     public async Task<ApiResponse<dynamic>> GetJobAsync(int serviceJobId, int userId)
     {
@@ -58,5 +72,22 @@ public class ServiceJobService : IServiceJobService
             return new ApiResponse<dynamic>(200, "Success", data);
         }
         catch (Exception ex) { return new ApiResponse<dynamic>(500, ex.Message); }
+    }
+
+    public async Task<ApiResponse<IEnumerable<dynamic>>> GetJobsByTechnicianId(int TechnicianId)
+    {
+        try
+        {
+            var result = await _repo.GetJobByTechnicianId(TechnicianId);
+            if (result == null)
+            {
+                return new ApiResponse<IEnumerable<dynamic>>(404, "no Jobs found");
+            }
+            return new ApiResponse<IEnumerable<dynamic>>(200, "jobs fetched successfully", result);
+        }
+        catch (Exception ex)
+        {
+            return new ApiResponse<IEnumerable<dynamic>>(500, ex.Message);
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace SmartServe.Application.DTOs.AuthDto
 
         [StringLength(20, MinimumLength = 6, ErrorMessage = "Password must be 6–20 characters")]
         public string Password { get; set; } = string.Empty;
+        [JsonIgnore]
         public Roles Role { get; set; } = Roles.Customer;
         [JsonIgnore]
         public int? CreatedBy { get; set; }

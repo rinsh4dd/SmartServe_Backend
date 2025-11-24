@@ -10,7 +10,4 @@ public class AddProductToJobDto
     public int Quantity { get; set; }
 }
 
-public class CompleteJobDto
-{
-    public string? WorkDescription { get; set; }
-}
+

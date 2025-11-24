@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SmartServe.Application.Contracts.Repository;
@@ -32,20 +33,34 @@ public class ServiceJobsController : ControllerBase
         var res = await _service.AddProductToJobAsync(jobId, dto, technicianId, user);
         return StatusCode(res.StatusCode, res);
     }
+   [HttpPost("complete")]
+public async Task<IActionResult> CompleteJob(CompleteJobDto dto)
+{
+    int userId = ClaimsHelper.GetUserId(User);
+    var res = await _service.CompleteJobAsync(dto, userId);
+    return StatusCode(res.StatusCode, res);
+}
 
-
-    [HttpPost("{id}/complete")]
-    public async Task<IActionResult> Complete(int id, [FromBody] CompleteJobDto dto)
-    {
-        int userId = ClaimsHelper.GetUserId(User);
-        var res = await _service.CompleteJobAsync(id, userId, dto.WorkDescription);
-        return StatusCode(res.StatusCode, res);
-    }
     [HttpGet("{id}")]
     public async Task<IActionResult> Get(int id)
     {
         int userId = ClaimsHelper.GetUserId(User);
         var res = await _service.GetJobAsync(id, userId);
+        return StatusCode(res.StatusCode, res);
+    }
+    [HttpGet("technician/{technicianId}")]
+    public async Task<IActionResult> GetByTechnicianId(int technicianId)
+    {
+        var res = await _service.GetJobsByTechnicianId(technicianId);
+        return StatusCode(res.StatusCode, res);
+    }
+    [Authorize(Roles = "Technician")]
+    [HttpGet("technician")]
+    public async Task<IActionResult> GetJobByTechnician()
+    {
+        var userId = ClaimsHelper.GetUserId(User);
+        var technicianId = await _techncianRepo.GetTechnicianIdByUserIdAsync(userId);
+        var res = await _service.GetJobsByTechnicianId(technicianId);
         return StatusCode(res.StatusCode, res);
     }
 }

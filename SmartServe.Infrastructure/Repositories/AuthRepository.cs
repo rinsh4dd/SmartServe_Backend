@@ -3,6 +3,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using SmartServe.Application.DTOs.AuthDto;
 using SmartServe.Application.Models.Auth;
+using SmartServe.Domain.Enums;
 using System.Data;
 
 namespace SmartServe.Infrastructure.Repositories
@@ -27,7 +28,7 @@ namespace SmartServe.Infrastructure.Repositories
             parameters.Add("@USERNAME", dto.UserName);
             parameters.Add("@USEREMAIL", dto.UserEmail);
             parameters.Add("@PASSWORDHASH", dto.Password);
-            parameters.Add("@ROLE", dto.Role.ToString());
+            parameters.Add("@ROLE", Roles.Customer.ToString());
             parameters.Add("@CREATEDBY", dto.CreatedBy);
 
             return await transaction.Connection.ExecuteScalarAsync<int>(

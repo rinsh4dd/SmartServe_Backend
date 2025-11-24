@@ -32,15 +32,22 @@ public class ServiceJobRepository : IServiceJobRepository
         );
     }
 
-    public async Task<int> CompleteJobAsync(int serviceJobId, int userId, string workDescription = null)
+    public async Task<int> CompleteJobAsync(CompleteJobDto dto, int userId)
     {
         var p = new DynamicParameters();
         p.Add("@FLAG", "COMPLETE");
-        p.Add("@ServiceJobId", serviceJobId);
+        p.Add("@ServiceJobId", dto.ServiceJobId);
         p.Add("@UserId", userId);
-        p.Add("@WorkDescription", workDescription);
-        return await _db.QueryFirstOrDefaultAsync<int>("SP_SERVICEJOBS", p, commandType: CommandType.StoredProcedure);
+        p.Add("@WorkDescription", dto.WorkDescription);
+        p.Add("@LabourCharge", dto.LabourCharge);
+
+        return await _db.QueryFirstOrDefaultAsync<int>(
+            "SP_SERVICEJOBS",
+            p,
+            commandType: CommandType.StoredProcedure
+        );
     }
+
     public async Task<dynamic> GetJobByIdAsync(int serviceJobId)
     {
         var p = new DynamicParameters();
@@ -53,5 +60,18 @@ public class ServiceJobRepository : IServiceJobRepository
             var products = (await multi.ReadAsync()).ToList();
             return new { Job = job, Products = products };
         }
+    }
+
+    public async Task<dynamic> GetJobByTechnicianId(int TechnicianId)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@FLAG", "GET_BY_TECHNICIAN");
+        parameters.Add("@TechnicianId", TechnicianId);
+
+        return await _db.QueryAsync(
+            "SP_SERVICEJOBS",
+            parameters,
+            commandType: CommandType.StoredProcedure
+        );
     }
 }
