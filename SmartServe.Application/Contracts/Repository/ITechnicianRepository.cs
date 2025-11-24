@@ -5,6 +5,7 @@ namespace SmartServe.Application.Contracts.Repository
     public interface ITechnicianRepository
     {
         Task<int> CreateTechnicianAsync(int userId, int createdBy);
+        Task<int> GetTechnicianIdByUserIdAsync(int userId);
         Task<IEnumerable<TechnicianResponseDto>> GetAllAsync();
         Task<TechnicianResponseDto?> GetByIdAsync(int technicianId);
         Task<TechnicianResponseDto?> GetByUserIdAsync(int userId);

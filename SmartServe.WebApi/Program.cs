@@ -13,6 +13,8 @@ builder.Services.AddApplicationServices();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.Configure<CloudinarySettings>(
+    builder.Configuration.GetSection("Cloudinary"));
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -58,7 +60,6 @@ builder.Services.AddTransient<IDbConnection>(sp => new SqlConnection(connectionS
 var key = Encoding.UTF8.GetBytes(
     builder.Configuration["Jwt:Key"] ?? throw new Exception("JWT Key is missing in configuration.")
 );
-
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

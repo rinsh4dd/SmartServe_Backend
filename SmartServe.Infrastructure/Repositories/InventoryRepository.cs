@@ -21,6 +21,8 @@ public class InventoryRepository : IInventoryRepository
         p.Add("@UNITPRICE", dto.UnitPrice);
         p.Add("@COSTPRICE", dto.CostPrice);
         p.Add("@CREATEDBY", userId);
+        p.Add("@IMAGEURL", dto.ImageUrl);
+
 
         return await _db.QueryFirstOrDefaultAsync<int>(
             "SP_PRODUCTS", p, commandType: CommandType.StoredProcedure);
@@ -40,6 +42,21 @@ public class InventoryRepository : IInventoryRepository
 
         return await _db.QueryFirstOrDefaultAsync<int>(
             "SP_PRODUCTS", p, commandType: CommandType.StoredProcedure);
+    }
+
+    public async Task<IEnumerable<ProductResponseDto>> FilterProductsAsync(ProductFilterDto filter)
+    {
+        var p = new DynamicParameters();
+        p.Add("@Search", filter.Search);
+        p.Add("@CategoryId", filter.CategoryId);
+        p.Add("@MinPrice", filter.MinPrice);
+        p.Add("@MaxPrice", filter.MaxPrice);
+
+        return await _db.QueryAsync<ProductResponseDto>(
+            "SP_PRODUCTS_FILTER",
+            p,
+            commandType: CommandType.StoredProcedure
+        );
     }
 
     public async Task<IEnumerable<ProductResponseDto>> GetAllProductsAsync()

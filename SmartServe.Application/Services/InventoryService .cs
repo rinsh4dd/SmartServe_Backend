@@ -5,10 +5,12 @@ using SmartServe.Application.DTOs;
 public class InventoryService : IInventoryService
 {
     private readonly IInventoryRepository _repo;
+    private readonly ICloudinaryService _cloudnary;
 
-    public InventoryService(IInventoryRepository repo)
+    public InventoryService(IInventoryRepository repo, ICloudinaryService cloudinaryService)
     {
         _repo = repo;
+        _cloudnary = cloudinaryService;
     }
 
     private bool CanManageInventory(string role, int departmentId)
@@ -23,19 +25,41 @@ public class InventoryService : IInventoryService
     }
 
 
-    public async Task<ApiResponse<int>> AddProductAsync(AddProductDtoStaff dto, int userId, string role, int staffId, int departmentId)
+    public async Task<ApiResponse<int>> AddProductAsync(
+    AddProductRequest request,
+    int userId,
+    string role,
+    int staffId,
+    int departmentId)
     {
         if (!CanManageInventory(role, departmentId))
             return new ApiResponse<int>(403, "Unauthorized: Only Inventory staff or Admin can add products.");
 
-        if (string.IsNullOrWhiteSpace(dto.ProductName))
+        if (string.IsNullOrWhiteSpace(request.ProductName))
             return new ApiResponse<int>(400, "Product name is required.");
 
+        string imageUrl = null;
+
+        if (request.Image != null)
+        {
+            using var stream = request.Image.OpenReadStream();
+            imageUrl = await _cloudnary.UploadImageAsync(stream, request.Image.FileName);
+        }
+
+        var dto = new AddProductDtoStaff
+        {
+            ProductName = request.ProductName,
+            UNQBC = request.UNQBC,
+            CategoryId = request.CategoryId,
+            UnitPrice = request.UnitPrice,
+            CostPrice = request.CostPrice,
+            ImageUrl = imageUrl
+        };
+
         int id = await _repo.AddProductAsync(dto, userId);
+
         return new ApiResponse<int>(200, $"Product added successfully by staff {staffId}.", id);
     }
-
-
     public async Task<ApiResponse<int>> UpdateProductAsync(
     int productId,
     UpdateProductDto dto,
@@ -55,7 +79,7 @@ public class InventoryService : IInventoryService
         return new ApiResponse<int>(200, "Product updated.", rows);
     }
 
-    public async Task<ApiResponse<int>> DeleteProductAsync(int productId, int userId, string role, int staffId,int deptId)
+    public async Task<ApiResponse<int>> DeleteProductAsync(int productId, int userId, string role, int staffId, int deptId)
     {
         if (!CanManageInventory(role, deptId))
             return new ApiResponse<int>(403, "Unauthorized.");
@@ -67,7 +91,7 @@ public class InventoryService : IInventoryService
         return new ApiResponse<int>(200, "Product deleted.", rows);
     }
 
-    public async Task<ApiResponse<int>> StockInAsync(int productId, int qty, int userId, string role, int staffId,int deptId)
+    public async Task<ApiResponse<int>> StockInAsync(int productId, int qty, int userId, string role, int staffId, int deptId)
     {
         if (!CanManageInventory(role, deptId))
             return new ApiResponse<int>(403, "Unauthorized.");
@@ -79,9 +103,9 @@ public class InventoryService : IInventoryService
         return new ApiResponse<int>(200, "Stock added successfully.", rows);
     }
 
-    public async Task<ApiResponse<int>> StockOutAsync(int productId, int qty, int userId, string role, int staffId)
+    public async Task<ApiResponse<int>> StockOutAsync(int productId, int qty, int userId, string role, int staffId, int deptId)
     {
-        if (!CanManageInventory(role, staffId))
+        if (!CanManageInventory(role, deptId))
             return new ApiResponse<int>(403, "Unauthorized.");
 
         if (qty <= 0)
@@ -120,4 +144,10 @@ public class InventoryService : IInventoryService
         var total = await _repo.GetTotalInventoryValueAsync();
         return new ApiResponse<decimal>(200, "Success", total);
     }
+    public async Task<ApiResponse<IEnumerable<ProductResponseDto>>> FilterProductsAsync(ProductFilterDto filter)
+    {
+        var list = await _repo.FilterProductsAsync(filter);
+        return new ApiResponse<IEnumerable<ProductResponseDto>>(200, "Success", list);
+    }
+
 }

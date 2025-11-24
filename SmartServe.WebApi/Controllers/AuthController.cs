@@ -9,7 +9,6 @@ namespace SmartServe.WebAPI.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
-
         public AuthController(IAuthService authService)
         {
             _authService = authService;
@@ -19,9 +18,7 @@ namespace SmartServe.WebAPI.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
             var response = await _authService.RegisterUserAsync(dto);
-
             return StatusCode(response.StatusCode, response);
         }
         [HttpPost("login")]

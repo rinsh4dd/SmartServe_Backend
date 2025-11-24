@@ -60,7 +60,14 @@ namespace SmartServe.Application.Services
             }
             return new ApiResponse<int>(200, "Deleted Successfully");
         }
+        public async Task<ApiResponse<dynamic>> GetVehicleHistoryAsync(int vehicleId, string role)
+        {
+            if (vehicleId <= 0)
+                return new ApiResponse<dynamic>(400, "Invalid vehicle ID");
 
+            var data = await _vehichleRepository.GetVehicleHistoryAsync(vehicleId);
 
+            return new ApiResponse<dynamic>(200, "Vehicle history fetched successfully", data);
+        }
     }
 }

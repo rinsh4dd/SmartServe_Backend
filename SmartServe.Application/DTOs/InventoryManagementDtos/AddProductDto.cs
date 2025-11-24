@@ -1,14 +1,22 @@
-namespace SmartServe.Application.DTOs
+using Microsoft.AspNetCore.Http;
+
+public class AddProductDtoStaff
 {
-    public class AddProductDtoStaff
-    {
-        public string ProductName { get; set; }
-        public string UNQBC { get; set; }   // Barcode / QR
-        public int? CategoryId { get; set; }
-        public decimal UnitPrice { get; set; }
-        public decimal CostPrice { get; set; }
-        public IFormFile? Image { get; set; }
+    public string ProductName { get; set; }
+    public string UNQBC { get; set; }
+    public int? CategoryId { get; set; }
+    public decimal UnitPrice { get; set; }
+    public decimal CostPrice { get; set; }
+    public string? ImageUrl { get; set; }  // string for Cloudinary URL
+}
 
-    }
 
+public class AddProductRequest
+{
+    public string ProductName { get; set; }
+    public string UNQBC { get; set; }
+    public int? CategoryId { get; set; }
+    public decimal UnitPrice { get; set; }
+    public decimal CostPrice { get; set; }
+    public IFormFile? Image { get; set; } 
 }

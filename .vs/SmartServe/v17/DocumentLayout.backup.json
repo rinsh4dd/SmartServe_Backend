@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\dtos\\inventorymanagementdtos\\addproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\dtos\\inventorymanagementdtos\\addproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\contracts\\repository\\istaffrepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|solutionrelative:smartserve.application\\contracts\\repository\\istaffrepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2339356-D4F6-5A2C-5D46-9BE2B8241526}|SmartServe.WebApi\\SmartServe.WebApi.csproj|solutionrelative:smartserve.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{53591586-088D-D71B-57A0-C55D786A17AB}|SmartServe.Application\\SmartServe.Application.csproj|c:\\users\\rinsh\\source\\repos\\smartserve\\smartserve.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -198,11 +210,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "GeminiService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\GeminiService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Services\\GeminiService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\GeminiService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Services\\GeminiService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T08:28:01.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AiService.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\AiService.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\Services\\AiService.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\AiService.cs",
+              "RelativeToolTip": "SmartServe.Application\\Services\\AiService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T08:27:07.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\InventoryManagementDtos\\AddProductDto.cs",
+              "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\InventoryManagementDtos\\AddProductDto.cs",
+              "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\InventoryManagementDtos\\AddProductDto.cs",
+              "RelativeToolTip": "SmartServe.Application\\DTOs\\InventoryManagementDtos\\AddProductDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T09:19:06.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "StaffService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\StaffService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Services\\StaffService.cs",
@@ -214,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "IStaffService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IStaffService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IStaffService.cs",
@@ -226,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "StaffController.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\StaffController.cs",
               "RelativeDocumentMoniker": "SmartServe.WebApi\\Controllers\\StaffController.cs",
@@ -238,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "DepartmentModel.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Departments\\DepartmentModel.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Models\\Departments\\DepartmentModel.cs",
@@ -250,32 +300,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "DepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\DepartmentService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Services\\DepartmentService.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\DepartmentService.cs",
               "RelativeToolTip": "SmartServe.Application\\Services\\DepartmentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:25:48.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:25:48.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "SmartServe.WebApi\\Program.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Program.cs",
               "RelativeToolTip": "SmartServe.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAMwFkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T09:16:06.348Z"
+              "WhenOpened": "2025-11-07T09:16:06.348Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "IDepartmentService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IDepartmentService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IDepartmentService.cs",
@@ -287,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "IStaffRepository.cs.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IStaffRepository.cs.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Repository\\IStaffRepository.cs.cs",
@@ -299,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "StaffRepository.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\StaffRepository.cs",
               "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Repositories\\StaffRepository.cs",
@@ -311,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Services\\AuthService.cs",
@@ -323,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "CreateStaffDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\StaffDto\\CreateStaffDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\StaffDto\\CreateStaffDto.cs",
@@ -335,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "StaffModel.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Staff\\StaffModel.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Models\\Staff\\StaffModel.cs",
@@ -347,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "PasswordHelper.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Helpers\\PasswordHelper.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Helpers\\PasswordHelper.cs",
@@ -359,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "UserModel.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Models\\Auth\\UserModel.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Models\\Auth\\UserModel.cs",
@@ -371,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "SmartServe.WebApi\\Controllers\\DepartmentController.cs",
@@ -383,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IDepartmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IDepartmentRepository.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Repository\\IDepartmentRepository.cs",
@@ -395,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "UpdateDepartmentDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\DepartmentDto\\UpdateDepartmentDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\DepartmentDto\\UpdateDepartmentDto.cs",
@@ -407,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "CreateTechnicianDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\TechnicianDto\\CreateTechnicianDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\TechnicianDto\\CreateTechnicianDto.cs",
@@ -419,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "DepartmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\DepartmentRepository.cs",
               "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Repositories\\DepartmentRepository.cs",
@@ -431,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Common\\ApiResponse.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Common\\ApiResponse.cs",
@@ -443,19 +493,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "DependencyInjections.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
               "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
               "RelativeToolTip": "SmartServe.Infrastructure\\Extensions\\DependencyInjections.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAEBVwBUAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T09:24:30.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "ClaimsHelper.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Helpers\\ClaimsHelper.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Helpers\\ClaimsHelper.cs",
@@ -467,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "SmartServe.WebApi\\Controllers\\UserController.cs",
@@ -479,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "CreateDepartmentDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\DepartmentDto\\CreateDepartmentDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\DepartmentDto\\CreateDepartmentDto.cs",
@@ -491,31 +541,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
               "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
               "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\AuthRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBAAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T10:06:03.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "IAuthRepository.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
               "RelativeToolTip": "SmartServe.Application\\Contracts\\Repository\\IAuthRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T10:06:13.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "RegisterUserDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\RegisterUserDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\AuthDto\\RegisterUserDto.cs",
@@ -527,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Settings\\JwtSettings.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Settings\\JwtSettings.cs",
@@ -539,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "AuthReponseDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\AuthReponseDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\AuthDto\\AuthReponseDto.cs",
@@ -551,43 +601,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "SmartServe.WebApi\\appsettings.json",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\appsettings.json",
               "RelativeToolTip": "SmartServe.WebApi\\appsettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-07T06:48:21.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "LoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\LoginRequestDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\AuthDto\\LoginRequestDto.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\AuthDto\\LoginRequestDto.cs",
               "RelativeToolTip": "SmartServe.Application\\DTOs\\AuthDto\\LoginRequestDto.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAIBQwAQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T06:48:18.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Services\\JwtTokenService.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\JwtTokenService.cs",
               "RelativeToolTip": "SmartServe.Application\\Services\\JwtTokenService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAswCMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswCMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T07:15:20.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Domain\\Enums\\Roles.cs",
               "RelativeDocumentMoniker": "SmartServe.Domain\\Enums\\Roles.cs",
@@ -599,19 +649,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "EmailService.cs.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\EmailService.cs.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Services\\EmailService.cs.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\EmailService.cs.cs",
               "RelativeToolTip": "SmartServe.Application\\Services\\EmailService.cs.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA8wBoAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T09:23:59.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IEmailService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IEmailService.cs",
@@ -623,19 +673,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "SmartServe.Infrastructure\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "SmartServe.Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T08:47:28.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Services\\UserService.cs",
@@ -647,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IUserService.cs",
@@ -659,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Repository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Repository\\IUserRepository.cs",
@@ -671,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "CreateUserDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\UserDto\\CreateUserDto.cs",
@@ -683,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "UpdateUserDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\UpdateUserDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\UserDto\\UpdateUserDto.cs",
@@ -695,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\DTOs\\UserDto\\UserDto.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\DTOs\\UserDto\\UserDto.cs",
@@ -707,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "SmartServe.WebApi\\Controllers\\AuthController.cs",
@@ -719,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "IJwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IJwtTokenService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IJwtTokenService.cs",
@@ -731,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Application\\Contracts\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "SmartServe.Application\\Contracts\\Services\\IAuthService.cs",
@@ -743,19 +793,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "SmartServe.WebApi.csproj",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\SmartServe.WebApi.csproj",
               "RelativeDocumentMoniker": "SmartServe.WebApi\\SmartServe.WebApi.csproj",
               "ToolTip": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.WebApi\\SmartServe.WebApi.csproj",
               "RelativeToolTip": "SmartServe.WebApi\\SmartServe.WebApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-11-07T09:44:21.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "SmartServe.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\rinsh\\source\\repos\\SmartServe\\SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj",
               "RelativeDocumentMoniker": "SmartServe.Infrastructure\\SmartServe.Infrastructure.csproj",
@@ -764,6 +814,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-11-07T06:48:21.024Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

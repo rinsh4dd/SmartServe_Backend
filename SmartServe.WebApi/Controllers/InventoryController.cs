@@ -9,22 +9,42 @@ public class InventoryController : ControllerBase
 {
     private readonly IInventoryService _service;
     private readonly IStaffRepository _staffRepo;
+    private readonly ICloudinaryService _cloudnaryService;
 
-    public InventoryController(IInventoryService service, IStaffRepository staffRepo)
+    public InventoryController(IInventoryService service, IStaffRepository staffRepo, ICloudinaryService cloudinaryService)
     {
         _service = service;
         _staffRepo = staffRepo;
+        _cloudnaryService = cloudinaryService;
     }
 
-    [HttpPost("add")]
-    public async Task<IActionResult> AddProduct(AddProductDtoStaff dto)
+    [HttpPost]
+    public async Task<IActionResult> AddProduct([FromForm] AddProductRequest request)
     {
+
         var user = ClaimsHelper.GetUser(User);
 
         int staffId = await _staffRepo.GetStaffIdByUserIdAsync(user.UserId);
         int deptId = await _staffRepo.GetDepartmentIdByUserIdAsync(user.UserId);
+        string imageUrl = null;
 
-        var res = await _service.AddProductAsync(dto, user.UserId, user.Role, staffId, deptId);
+        if (request.Image != null)
+        {
+            using var stream = request.Image.OpenReadStream();
+            imageUrl = await _cloudnaryService.UploadImageAsync(stream, request.Image.FileName);
+        }
+
+        var dto = new AddProductDtoStaff
+        {
+            ProductName = request.ProductName,
+            UNQBC = request.UNQBC,
+            CategoryId = request.CategoryId,
+            UnitPrice = request.UnitPrice,
+            CostPrice = request.CostPrice,
+            ImageUrl = imageUrl
+        };
+
+        var res = await _service.AddProductAsync(request, user.UserId, user.Role, staffId, deptId);
         return StatusCode(res.StatusCode, res);
     }
 
@@ -48,7 +68,7 @@ public class InventoryController : ControllerBase
         int staffId = await _staffRepo.GetStaffIdByUserIdAsync(user.UserId);
         int deptId = await _staffRepo.GetDepartmentIdByUserIdAsync(user.UserId);
 
-        var res = await _service.DeleteProductAsync(id, user.UserId, user.Role, staffId,deptId);
+        var res = await _service.DeleteProductAsync(id, user.UserId, user.Role, staffId, deptId);
         return StatusCode(res.StatusCode, res);
     }
 
@@ -69,8 +89,8 @@ public class InventoryController : ControllerBase
     {
         var user = ClaimsHelper.GetUser(User);
         int staffId = await _staffRepo.GetStaffIdByUserIdAsync(user.UserId);
-
-        var res = await _service.StockOutAsync(productId, qty, user.UserId, user.Role, staffId);
+        int deptId = await _staffRepo.GetDepartmentIdByUserIdAsync(user.UserId);
+        var res = await _service.StockOutAsync(productId, qty, user.UserId, user.Role, staffId, deptId);
         return StatusCode(res.StatusCode, res);
     }
 
@@ -89,7 +109,15 @@ public class InventoryController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        var response =await _service.GetAllProductsAsync();
-        return StatusCode(response.StatusCode,response);
+        var response = await _service.GetAllProductsAsync();
+        return StatusCode(response.StatusCode, response);
     }
+
+    [HttpGet("filter")]
+    public async Task<IActionResult> FilterProducts([FromQuery] ProductFilterDto filter)
+    {
+        var result = await _service.FilterProductsAsync(filter);
+        return StatusCode(result.StatusCode, result);
+    }
+
 }

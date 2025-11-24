@@ -64,7 +64,6 @@ namespace SmartServe.WebApi.Controllers
         public async Task<IActionResult> ChangePassword(ChangePasswordDto dto)
         {
             dto.UserId = ClaimsHelper.GetUserId(User);
-
             var response = await _service.ChangePasswordAsync(dto);
             return StatusCode(response.StatusCode, response);
         }
@@ -74,7 +73,6 @@ namespace SmartServe.WebApi.Controllers
             var response = await _service.ForgotPasswordAsync(dto);
             return StatusCode(response.StatusCode, response);
         }
-
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword(ResetPasswordDto dto)
         {

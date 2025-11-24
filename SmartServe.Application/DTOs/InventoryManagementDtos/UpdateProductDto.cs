@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Http;
 
 public class UpdateProductDto
 {

@@ -4,6 +4,7 @@ namespace SmartServe.Application.Contracts.Repository
 {
     public interface IInventoryRepository
     {
+        Task<IEnumerable<ProductResponseDto>> FilterProductsAsync(ProductFilterDto filter);
         Task<int> AddProductAsync(AddProductDtoStaff dto, int userId);
         Task<int> UpdateProductAsync(int productId, UpdateProductDto dto, int userId);
         Task<IEnumerable<ProductResponseDto>> GetAllProductsAsync();

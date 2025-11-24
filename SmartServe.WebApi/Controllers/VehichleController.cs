@@ -4,11 +4,7 @@ using SmartServe.Application.Common;
 using SmartServe.Application.Contracts.Repository;
 using SmartServe.Application.DTOs;
 using SmartServe.Application.Helpers;
-using SmartServe.Application.Contracts.Repository;
-using System;
-using System.Threading.Tasks;
 using SmartServe.Application.Contracts.Services;
-using System.Security.Claims;
 
 namespace SmartServe.WebApi.Controllers
 {
@@ -21,7 +17,6 @@ namespace SmartServe.WebApi.Controllers
         private readonly ICustomerRespository _customerRepo;
         private readonly IVehicleService _vehicleService;
         private readonly CustomerHelper _customerHelper;
-
         public VehicleController(IVehichleRepository vehicleRepository, ICustomerRespository customerRespository, IVehicleService vehicleService, CustomerHelper customerHelper)
         {
             _vehicleRepository = vehicleRepository;
@@ -36,21 +31,16 @@ namespace SmartServe.WebApi.Controllers
             try
             {
                 int userId = ClaimsHelper.GetUserId(User);
-
                 var customerId = await _customerRepo.GetCustomerIdByUserIdAsync(userId);
-
-
                 if (customerId == null || customerId == 0)
                     return BadRequest(ApiResponse<string>.FailResponse(
                         "Customer record not found for this user"
                     ));
-
                 var newVehicleId = await _vehicleRepository.AddVehicleAsync(
                     customerId.Value,
                     userId,
                     dto
                 );
-
                 return Ok(ApiResponse<int>.SuccessResponse(
                     newVehicleId,
                     "Vehicle added successfully"
@@ -61,8 +51,6 @@ namespace SmartServe.WebApi.Controllers
                 return StatusCode(500, ApiResponse<string>.FailResponse(ex.Message, 500));
             }
         }
-
-
         [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -91,10 +79,16 @@ namespace SmartServe.WebApi.Controllers
         public async Task<IActionResult> DeleteVehichle(int id)
         {
             int userId = ClaimsHelper.GetUserId(User);
-
             var response = await _vehicleService.DeleteVehichleAsync(id, deletedBy: userId);
-
             return StatusCode(response.StatusCode, response);
+        }
+        [Authorize(Roles = "Admin,Staff,Technician")]
+        [HttpGet("vehicle-history/{vehicleId}")]
+        public async Task<IActionResult> GetVehicleHistory(int vehicleId)
+        {
+            var user = ClaimsHelper.GetUser(User);
+            var res = await _vehicleService.GetVehicleHistoryAsync(vehicleId, user.Role);
+            return StatusCode(res.StatusCode, res);
         }
     }
 }

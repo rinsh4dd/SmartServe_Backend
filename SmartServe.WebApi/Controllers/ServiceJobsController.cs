@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using SmartServe.Application.Contracts.Repository;
 using SmartServe.Application.Helpers;
 
 [ApiController]
@@ -8,16 +9,12 @@ using SmartServe.Application.Helpers;
 public class ServiceJobsController : ControllerBase
 {
     private readonly IServiceJobService _service;
-    public ServiceJobsController(IServiceJobService service) => _service = service;
-
-    [HttpPost("create-if-not-exists")]
-    public async Task<IActionResult> CreateIfNotExists([FromBody] CreateJobDto dto)
+    private readonly ITechnicianRepository _techncianRepo;
+    public ServiceJobsController(IServiceJobService service, ITechnicianRepository technicianRepository)
     {
-        int userId = ClaimsHelper.GetUserId(User);
-        var res = await _service.CreateJobIfNotExistsAsync(dto.AppointmentId, dto.TechnicianId, userId);
-        return StatusCode(res.StatusCode, res);
+        _service = service;
+        _techncianRepo = technicianRepository;
     }
-
     [HttpPost("{id}/start")]
     public async Task<IActionResult> Start(int id)
     {
@@ -25,14 +22,17 @@ public class ServiceJobsController : ControllerBase
         var res = await _service.StartJobAsync(id, userId);
         return StatusCode(res.StatusCode, res);
     }
-
-    [HttpPost("{id}/add-product")]
-    public async Task<IActionResult> AddProduct(int id, AddProductDto dto)
+    [HttpPost("{jobId}/add-product")]
+    public async Task<IActionResult> AddProductToJob(int jobId, AddProductToJobDto dto)
     {
-        int userId = ClaimsHelper.GetUserId(User);
-        var res = await _service.AddProductToJobAsync(id, dto.AppointmentId, dto.ProductId, dto.Quantity, dto.TechnicianId, userId);
+        var user = ClaimsHelper.GetUserId(User);
+        int technicianId = await _techncianRepo.GetTechnicianIdByUserIdAsync(user);
+        if (technicianId <= 0)
+            return Unauthorized("Only technicians can add products.");
+        var res = await _service.AddProductToJobAsync(jobId, dto, technicianId, user);
         return StatusCode(res.StatusCode, res);
     }
+
 
     [HttpPost("{id}/complete")]
     public async Task<IActionResult> Complete(int id, [FromBody] CompleteJobDto dto)
@@ -41,7 +41,6 @@ public class ServiceJobsController : ControllerBase
         var res = await _service.CompleteJobAsync(id, userId, dto.WorkDescription);
         return StatusCode(res.StatusCode, res);
     }
-
     [HttpGet("{id}")]
     public async Task<IActionResult> Get(int id)
     {

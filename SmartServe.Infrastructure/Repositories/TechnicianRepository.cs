@@ -140,4 +140,16 @@ public class TechnicianRepository : ITechnicianRepository
             commandType: CommandType.StoredProcedure
         ) > 0;
     }
+
+    public async Task<int> GetTechnicianIdByUserIdAsync(int userId)
+    {
+        var sql = @"SELECT TechnicianId 
+                FROM Technicians
+                WHERE UserId = @U
+                  AND IsAvailable = 1
+                  AND IsDeleted = 0";
+
+        return await _db.QueryFirstOrDefaultAsync<int>(sql, new { U = userId });
+    }
+
 }

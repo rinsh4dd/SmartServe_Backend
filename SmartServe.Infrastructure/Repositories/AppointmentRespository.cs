@@ -36,6 +36,7 @@ public class AppointmentsRepository : IAppointmentsRepository
             p.Add("@APPOINTMENTDATE", dto.AppointmentDate);
             p.Add("@WINDOWID", dto.WindowId);
             p.Add("@PROBLEMDESCRIPTION", dto.ProblemDescription);
+            p.Add("@KMDRIVEN",dto.KmDriven);
             p.Add("@CREATEDBY", createdBy);
 
             return await _db.QueryFirstOrDefaultAsync<int>(

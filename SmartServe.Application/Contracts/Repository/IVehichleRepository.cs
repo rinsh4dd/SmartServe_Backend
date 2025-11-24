@@ -11,6 +11,7 @@ namespace SmartServe.Application.Contracts.Repository
         Task<IEnumerable<VehicleResponseDto>> GetAllVehiclesAsync();
         Task<VehicleResponseDto> GetVehicleByIdAsync(int vehicleId);
         Task<IEnumerable<VehicleResponseDto>> GetVehiclesByCustomerAsync(int customerId);
+        Task<dynamic> GetVehicleHistoryAsync(int vehicleId);
 
     }
 }

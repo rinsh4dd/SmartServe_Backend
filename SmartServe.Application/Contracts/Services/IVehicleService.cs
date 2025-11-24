@@ -9,5 +9,6 @@ namespace SmartServe.Application.Contracts.Services
         Task<ApiResponse<IEnumerable<VehicleResponseDto>>> GetAllVehicles();
         Task<ApiResponse<IEnumerable<VehicleResponseDto>>> GetByCustomerId(int id);
         Task<ApiResponse<int>> DeleteVehichleAsync(int vehicleId,int deletedBy);
+        Task<ApiResponse<dynamic>> GetVehicleHistoryAsync(int vehicleId, string role);
     }
 }

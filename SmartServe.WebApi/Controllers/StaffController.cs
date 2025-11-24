@@ -13,28 +13,20 @@ namespace SmartServe.WebAPI.Controllers
     public class StaffController : ControllerBase
     {
         private readonly IStaffService _staffService;
-
         public StaffController(IStaffService staffService)
         {
             _staffService = staffService;
         }
-
-
         [HttpPost]
         public async Task<IActionResult> CreateStaff([FromBody] CreateStaffDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
-
             if (userIdClaim == null)
                 return Unauthorized("Invalid or missing user claim.");
             dto.CreatedBy = ClaimsHelper.GetUserId(User);
-
-
             var response = await _staffService.CreateStaffAsync(dto);
-
             return StatusCode(response.StatusCode, response);
         }
 
@@ -63,7 +55,6 @@ namespace SmartServe.WebAPI.Controllers
         {
             dto.DeletedBy = ClaimsHelper.GetUserId(User);
             var response = await _staffService.DeleteStaffAsync(dto);
-
             return StatusCode(response.StatusCode, response);
         }
     }

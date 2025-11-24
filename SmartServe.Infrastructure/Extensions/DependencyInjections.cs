@@ -11,6 +11,7 @@ namespace SmartServe.Infrastructure.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+            //services
 
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IJwtTokenService, JwtTokenService>();
@@ -25,6 +26,12 @@ namespace SmartServe.Infrastructure.Extensions
             services.AddScoped<CustomerHelper>();
             services.AddScoped<IServiceJobService, ServiceJobService>();
             services.AddScoped<IInventoryService, InventoryService>();
+            services.AddScoped<ICloudinaryService, CloudinaryService>();
+            services.AddHttpClient<IAIService, AIService>(client =>
+            {
+                client.Timeout = TimeSpan.FromSeconds(60);
+            });
+
             //repos
             services.AddScoped<IServiceJobRepository, ServiceJobRepository>();
             services.AddScoped<IAuthRepository, AuthRepository>();
@@ -36,6 +43,8 @@ namespace SmartServe.Infrastructure.Extensions
             services.AddScoped<ICustomerRespository, CustomerRepository>();
             services.AddScoped<IAppointmentsRepository, AppointmentsRepository>();
             services.AddScoped<IInventoryRepository, InventoryRepository>();
+            services.AddScoped<IAIRepository, AIRepository>();
+
 
             return services;
         }

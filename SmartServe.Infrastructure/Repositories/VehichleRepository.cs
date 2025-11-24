@@ -81,6 +81,26 @@ namespace SmartServe.Infrastructure.Repositories
             commandType: CommandType.StoredProcedure
             );
         }
+        public async Task<dynamic> GetVehicleHistoryAsync(int vehicleId)
+        {
+            var param = new DynamicParameters();
+            param.Add("@VehicleId", vehicleId);
+
+            using var multi = await _db.QueryMultipleAsync(
+                "SP_VEHICLE_HISTORY",
+                param,
+                commandType: CommandType.StoredProcedure
+            );
+
+            var appointments = (await multi.ReadAsync()).ToList();
+            var products = (await multi.ReadAsync()).ToList();
+
+            return new
+            {
+                Appointments = appointments,
+                ProductsUsed = products
+            };
+        }
 
 
     }
