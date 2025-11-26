@@ -31,6 +31,10 @@ namespace SmartServe.Application.Helpers
                 ?? user.FindFirst("role")?.Value
                 ?? "Unknown";
         }
+        public static string GetUserName(ClaimsPrincipal user)
+        {
+            return user.FindFirst("UserName")?.Value;
+        }
 
         public static string GetEmail(ClaimsPrincipal user)
         {

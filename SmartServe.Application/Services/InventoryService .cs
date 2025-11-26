@@ -6,7 +6,6 @@ public class InventoryService : IInventoryService
 {
     private readonly IInventoryRepository _repo;
     private readonly ICloudinaryService _cloudnary;
-
     public InventoryService(IInventoryRepository repo, ICloudinaryService cloudinaryService)
     {
         _repo = repo;
@@ -58,7 +57,7 @@ public class InventoryService : IInventoryService
 
         int id = await _repo.AddProductAsync(dto, userId);
 
-        return new ApiResponse<int>(200, $"Product added successfully by staff {staffId}.", id);
+        return new ApiResponse<int>(200, $"Product added successfully", id);
     }
     public async Task<ApiResponse<int>> UpdateProductAsync(
     int productId,

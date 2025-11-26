@@ -2,6 +2,7 @@
 using SmartServe.Application.Contracts.Repository;
 using SmartServe.Application.Contracts.Services;
 using SmartServe.Application.Services;
+using SmartServe.Infrastructure.Repositorie;
 using SmartServe.Infrastructure.Repositories;
 using SmartServe.Infrastructure.Services;
 
@@ -31,6 +32,8 @@ namespace SmartServe.Infrastructure.Extensions
             {
                 client.Timeout = TimeSpan.FromSeconds(60);
             });
+            services.AddScoped<IBillingService, BillingService>();
+
 
             //repos
             services.AddScoped<IServiceJobRepository, ServiceJobRepository>();
@@ -44,6 +47,7 @@ namespace SmartServe.Infrastructure.Extensions
             services.AddScoped<IAppointmentsRepository, AppointmentsRepository>();
             services.AddScoped<IInventoryRepository, InventoryRepository>();
             services.AddScoped<IAIRepository, AIRepository>();
+            services.AddScoped<IBillingRepository, BillingRepository>();
 
 
             return services;

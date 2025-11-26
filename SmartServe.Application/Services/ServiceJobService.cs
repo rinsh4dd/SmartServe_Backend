@@ -19,7 +19,10 @@ public class ServiceJobService : IServiceJobService
             if (res <= 0) return new ApiResponse<int>(400, "Failed to start job.");
             return new ApiResponse<int>(200, "Job started.", res);
         }
-        catch (Exception ex) { return new ApiResponse<int>(400, ex.Message); }
+        catch (Exception ex)
+        {
+            return new ApiResponse<int>(400, ex.Message);
+        }
     }
     public async Task<ApiResponse<int>> AddProductToJobAsync(int jobId, AddProductToJobDto dto, int technicianId, int userId)
     {
@@ -34,26 +37,14 @@ public class ServiceJobService : IServiceJobService
     {
         try
         {
-            // Validate job
             var jobRaw = await _repo.GetJobByIdAsync(dto.ServiceJobId);
-            if (jobRaw == null || jobRaw.Job == null)
+            if (jobRaw == null)
                 return new ApiResponse<int>(404, "Job not found.");
-
-            int jobTechId = (int)jobRaw.Job.TechnicianId;
-
-            // Only assigned technician can complete
-            if (jobTechId != userId)
-                return new ApiResponse<int>(403, "Not authorized to complete this job.");
-
-            // Labour charge required
             if (dto.LabourCharge <= 0)
                 return new ApiResponse<int>(400, "Labour charge is required.");
-
-            // Complete job
             var billingId = await _repo.CompleteJobAsync(dto, userId);
             if (billingId <= 0)
                 return new ApiResponse<int>(400, "Failed to complete job.");
-
             return new ApiResponse<int>(200, "Job completed. Billing created.", billingId);
         }
         catch (Exception ex)
@@ -61,6 +52,7 @@ public class ServiceJobService : IServiceJobService
             return new ApiResponse<int>(500, ex.Message);
         }
     }
+
 
 
     public async Task<ApiResponse<dynamic>> GetJobAsync(int serviceJobId, int userId)

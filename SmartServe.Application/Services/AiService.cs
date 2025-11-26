@@ -32,7 +32,7 @@ public class AIService : IAIService
 
         string json = JsonConvert.SerializeObject(data, Formatting.Indented);
         string prompt = $@"
-You are an automotive diagnostic AI of SmartServeErp. Analyze the following vehicle data.
+You are an automotive diagnostic AI of SmartServeErp. Analyze the following vehicle data. And must send only very accurate answers.No lies only truth and Reality 
 Return STRICT JSON:
 {{
   ""overview"": string,
@@ -41,6 +41,7 @@ Return STRICT JSON:
   ""predictedFailures"": string[],
   ""recommendedMaintenance"": string[],
   ""currentVehichleCondition"":stirng[],
+    ""PossibleMileage / litre"": number,
   ""healthScore"": number
 }}
 

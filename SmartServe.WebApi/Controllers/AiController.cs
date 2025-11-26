@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SmartServe.Application.Contracts.Services;
+using SmartServe.Application.Helpers;
 
 namespace SmartServe.WebAPI.Controllers
 {
@@ -22,6 +23,27 @@ namespace SmartServe.WebAPI.Controllers
             var result = await _aiService.GenerateVehicleAIReportAsync(vehicleId);
             return StatusCode(result.StatusCode, result);
         }
+[Authorize]
+    [HttpGet("currrent-user")]
+    public IActionResult GetCurrentUser()
+    {
+        var dto = new CurrentUserDto
+        {
+            UserId = ClaimsHelper.GetUserId(User),
+            UserName = ClaimsHelper.GetUserName(User),
+            Email = ClaimsHelper.GetEmail(User),
+            Role = ClaimsHelper.GetRole(User)
+        };
+
+        return Ok(new 
+        {
+            statusCode = 200,
+            message = "Current user profile",
+            data = dto
+        });
+    }
+
+        
         [HttpGet("health")]
         [AllowAnonymous]
         public IActionResult Health()
